@@ -21,6 +21,11 @@ Some external dependencies:
 
 ## Building the sample project
 
+Before to begin use the next parameters:
+- Node js version 14
+- you can use NVM to change the version
+
+
 Just run:
 
     npm run build
