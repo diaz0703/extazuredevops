@@ -142,7 +142,13 @@ class WorkItemOpenContent extends React.Component<{}, {losDatos:ArrayItemProvide
     //     })
     // );
     
+public formatdate(date: Date) : string {
+        
+        var dd = date.getDay().toString() + "/" + date.getMonth().toString() + "/" + date.getFullYear().toString();
 
+        return dd;
+
+}
 
     public async onOpenIteraciones() : Promise<String> {
 
@@ -157,8 +163,8 @@ class WorkItemOpenContent extends React.Component<{}, {losDatos:ArrayItemProvide
                  data.value.map((item: Iteracion.TeamSettingsIteration) => {
                     this.rawTableItems02.push({
                     id: item.id,
-                    inicio: item.attributes.startDate.toLocaleDateString("es-MX") ,
-                    fin: item.attributes.finishDate.toLocaleDateString("es-MX")   ,
+                    inicio: this.formatdate( item.attributes.startDate )  ,
+                    fin: this.formatdate( item.attributes.finishDate )   ,
                     nombre: { iconProps: { render: this.renderStatus }, text: item.name },
                     
                 })
