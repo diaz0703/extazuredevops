@@ -163,8 +163,8 @@ public formatdate(date: Date) : string {
                  data.value.map((item: Iteracion.TeamSettingsIteration) => {
                     this.rawTableItems02.push({
                     id: item.id,
-                    inicio: this.formatdate( item.attributes.startDate )  ,
-                    fin: this.formatdate( item.attributes.finishDate )   ,
+                    inicio: item.attributes.startDate.toString()  ,
+                    fin:  item.attributes.finishDate.toString()    ,
                     nombre: { iconProps: { render: this.renderStatus }, text: item.name },
                     
                 })

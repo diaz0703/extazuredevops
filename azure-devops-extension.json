@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "ThorUiAz",
     "publisher": "ThorSolutions",
-    "version": "1.6.8",
+    "version": "1.6.9",
     "name": "Thor ext para azure devops",
     "description": "Azure DevOps Extension",
     "categories": [
